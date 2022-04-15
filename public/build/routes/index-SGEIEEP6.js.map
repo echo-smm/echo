@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:D:\\web dev\\echo-smm\\echo-smm\\app\\routes\\index.jsx?browser", "../../../app/routes/index.jsx"],
+  "sourcesContent": ["export { default } from \"D:\\\\web dev\\\\echo-smm\\\\echo-smm\\\\app\\\\routes\\\\index.jsx\";", "export default function Index() {\r\n  return (\r\n    <div>\r\n      <h1>Welcome to Ripple</h1>\r\n    </div>\r\n  );\r\n}\r\n"],
+  "mappings": ";;;;;;AAAA;;;ACAA;AAAe,iBAAiB;AAC9B,SACE,oCAAC,OAAD,MACE,oCAAC,MAAD,MAAI;AAAA;",
+  "names": []
+}

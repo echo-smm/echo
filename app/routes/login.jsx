@@ -65,7 +65,8 @@ export const action = async ({ request }) => {
             formError: `Email/Password combination is incorrect.`,
           });
         });
-    }
+        break;
+    }f
     case "register": {
       createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
@@ -89,6 +90,7 @@ export const action = async ({ request }) => {
       //     formError: `User with email ${email} already exists`,
       //   });
       // }
+      break;
     }
     default: {
       console.log("Default");
