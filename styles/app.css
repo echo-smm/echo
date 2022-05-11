@@ -1,13 +1,16 @@
 @font-face {
   font-family: "hanson-bold";
-  src: url("/fonts/hanson-bold/hanson-bold.otf") format("otf");
+  src: url("/fonts/hanson-bold/hanson-bold.otf");
   font-weight: normal;
   font-style: normal;
 }
 :root {
   --font-body: -apple-system, "Segoe UI", Helvetica Neue, Helvetica, Roboto,
     Arial, sans-serif, system-ui, "Apple Color Emoji", "Segoe UI Emoji";
-  --font-display: hanson-bold, var(--font-body);
+  --font-display: baloo, var(--font-body);
+}
+h1 {
+  font-family: hanson-bold, var(--font-display);
 }
 @tailwind base;
 @tailwind components;

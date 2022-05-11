@@ -14,9 +14,9 @@ const { getSession, commitSession, destroySession } =
       //firebase token
       name: "firebase:token",
       // all of these are optional
-      expires: new Date(Date.now() + 600),
+      expires: new Date(Date.now() + 7200),
       httpOnly: true,
-      maxAge: 600,
+      maxAge: 7200,
       path: "/",
       sameSite: "lax",
       secrets: [sessionSecret],
