@@ -57,7 +57,7 @@ export default function Login() {
       <div className="w-screen h-screen grid grid-cols-2 justify-center items-center">
         <section className="h-full bg-yellow-400">
           <div className="grid grid-cols-1 h-full p-10 pb-0">
-            <div className="flex flex-col gap-10 w-3/4">
+            <div className="flex flex-col gap-10">
               <img src={echoBar} alt="echo" />
               <h1 className="text-slate-900 text-6xl">
                 Upload once.
@@ -95,9 +95,6 @@ export default function Login() {
                   placeholder="john.snow@gmail.com"
                   required
                 />
-                {/* <p>
-                Please provide a valid email address.
-              </p> */}
               </div>
               <div className="my-3">
                 <label className="block text-base mb-2" htmlFor="password">
@@ -110,9 +107,6 @@ export default function Login() {
                   placeholder="******"
                   required
                 />
-                {/* <p>
-                Please provide a valid email address.
-              </p> */}
               </div>
               <div className="my-3">
                 <div className="flex justify-between">
@@ -133,7 +127,6 @@ export default function Login() {
                 </div>
               </div>
               <button
-                // disabled={!validate._active}
                 type="submit"
                 className="w-full bg-blue-700 active:bg-blue-500 shadow hover:shadow-lg text-white my-2 px-5 py-3 rounded"
               >

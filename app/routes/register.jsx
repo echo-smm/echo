@@ -61,13 +61,7 @@ export default function Register() {
       _lowercase: lowercase,
       _digit: digit,
       _symbol: symbol,
-      _active:
-        validate._length &&
-        validate._uppercase &&
-        validate._lowercase &&
-        validate._digit
-          ? true
-          : "",
+      _active: length && uppercase && lowercase && digit ? true : "",
     });
   }
 
@@ -77,7 +71,7 @@ export default function Register() {
       <div className="w-screen h-screen grid grid-cols-2 justify-center items-center">
         <section className="h-full bg-yellow-400">
           <div className="grid grid-cols-1 h-full p-10 pb-0">
-            <div className="flex flex-col gap-10 w-3/4">
+            <div className="flex flex-col gap-10">
               <img src={echoBar} alt="echo" />
               <h1 className="text-slate-900 text-6xl">
                 Upload once.
@@ -185,7 +179,10 @@ export default function Register() {
               <button
                 disabled={!validate._active}
                 type="submit"
-                className="w-full bg-blue-700 active:bg-blue-500 shadow hover:shadow-lg text-white my-2 px-5 py-3 rounded"
+                className={
+                  (!validate._active ? "opacity-50" : "") +
+                  " w-full bg-blue-700 active:bg-blue-500 shadow hover:shadow-lg text-white my-2 px-5 py-3 rounded"
+                }
               >
                 Sign up
               </button>
