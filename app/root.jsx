@@ -8,8 +8,6 @@ import {
 } from "@remix-run/react";
 import styles from "~/styles/app.css";
 
-require("dotenv").config();
-
 export function links() {
   return [{ rel: "stylesheet", href: styles }];
 }
@@ -26,8 +24,7 @@ export default function App() {
       <head>
         <Meta />
         <Links />
-        {process.env.NODE_ENV === "development" ||
-        !process.env.FIREBASE_MEASUREMENT_ID ? null : (
+        {
           <>
             {/* <!-- Google Analytics Tracking Code --> */}
             <script
@@ -105,7 +102,7 @@ export default function App() {
               }}
             />
           </>
-        )}
+        }
       </head>
       <body>
         <Outlet />
