@@ -6,7 +6,7 @@ import echo from "public/echo.svg";
 import arrowCurve from "public/arrow-curve.svg";
 import arrowStraight from "public/arrow-straight.svg";
 import oval from "public/oval.svg";
-import iphoneMockup from "public/iphone-mockup-1.svg";
+import iPhoneMockup from "public/iPhone-mockup-1.svg";
 import sparkle from "public/sparkle.svg";
 import squiggle from "public/squiggle.svg";
 import question from "public/question.svg";
@@ -131,7 +131,7 @@ export default function Index() {
                 </p>
               </div>
               <div>
-                <img src={iphoneMockup} alt="iPhone mockup" />
+                <img src={iPhoneMockup} alt="iPhone mockup" />
               </div>
               <div>
                 <h2 className="text-4xl mb-6">Take your time and schedule</h2>
